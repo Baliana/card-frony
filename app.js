@@ -24,3 +24,13 @@ function criarMenu(disciplina) {
 }
 
 disciplinas.forEach(criarMenu)
+
+const produtos=[
+    {nome:'Iphone 16 Pro Max', icon: 'iphone.jpg', descricao: 'Apple iPhone 16 Pro Max (256 GB) Titânio-deserto', },
+    {nome:'Samsung Galaxy S24 Ultra', icon: '', descricao: ''},
+    {nome:'Xiaomi 14', icon: '', descricao: ''}
+
+]
+function criarBanner(){
+    const novaImg = document.createElement('img')
+}

@@ -35,3 +35,14 @@ a{
 .menu img{
     height: 16px;
 }
+
+
+.borda{
+    width: 400px; /* Adjust the size as needed */
+    height: 300px; /* Adjust the size as needed */
+    background-color: white;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center; /* Center the banner horizontally */
+    align-items: center; /* Center the banner vertically */
+}
