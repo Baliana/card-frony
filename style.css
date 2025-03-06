@@ -1,4 +1,4 @@
-/* style.css */
+
 :root {
     --cor-hover: white;
 }
@@ -163,8 +163,8 @@ main {
 
 .compra{
     
-    padding: 10px; /* Aumenta o tamanho do botão */
-    font-size: 1.7em; /* Aumenta o tamanho do texto */
+    padding: 10px; 
+    font-size: 1.7em; 
     justify-content: center;
     display: flex;
     transition:  0.3s;
