@@ -35,21 +35,21 @@ const produtos = [{
     {
         loja: 'Amazon',
         nome: 'Samsung Galaxy S24 Ultra',
-        icon: 'S24',
+        icon: 'samsung.jpg',
         descricao: 'Smartphone Samsung Galaxy S23 Ultra 512GB Verde 5G 12GB RAM 6,8” Câm. Quádrupla + Selfie 12MP',
         preco: 'R$ 6.499,00'
     },
     {
         loja: 'Amazon',
         nome: 'Xiaomi 14',
-        icon: 'Xiaomi',
+        icon: 'xiome.jpg',
         descricao: 'Smartphone Xiaomi Redmi Note 14 256GB 8GB RAM Dual SIM Tela 6.67" - Preto',
         preco: 'R$ 1.557,59'
     },
     {
         loja: 'Amazon',
         nome: 'Nokia',
-        icon: 'nokia',
+        icon: 'nokia.jpg',
         descricao: 'lanterna Original Nokia 1100 Gsm900',
         preco: '81,59'
     }
@@ -70,11 +70,28 @@ function criarBanner(Celulares) {
     Titulop.textContent = Celulares.loja
     Titulo.appendChild(Titulop)
 
+   
     const image = document.createElement('div')
     image.className = 'image'
     card.appendChild(image)
 
     const img = document.createElement('img')
+    image.appendChild(img)
+    img.src = `./img/${Celulares.icon}`
+
+    const image2 = document.createElement('div')
+    image.className = 'image'
+    card.appendChild(image)
+
+    const img2 = document.createElement('img')
+    image.appendChild(img)
+    img.src = `./img/${Celulares.icon}`
+    
+    const image3 = document.createElement('div')
+    image.className = 'image'
+    card.appendChild(image)
+
+    const img3 = document.createElement('img')
     image.appendChild(img)
     img.src = `./img/${Celulares.icon}`
 
@@ -91,7 +108,7 @@ function criarBanner(Celulares) {
     comentariop.textContent = Celulares.descricao
 
     const preco = document.createElement('p')
-    preco.className = 'preco'  // Correção aqui: adicionei a classe no 'preco'
+    preco.className = 'preco'  
     comentario.appendChild(preco)
     preco.textContent = Celulares.preco
 
